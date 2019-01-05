@@ -40,10 +40,10 @@ body {
 }
 
 .heading-secondary {
-  display: inline-block;
   font-style: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   color: transparent;
@@ -57,7 +57,8 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
+  font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
