@@ -9,4 +9,10 @@
   background-image: linear-gradient( to right bottom, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8) ),
   url(../img/nat-4.jpg);  
   background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -6.25rem;
+  // All 'direct' child elements of .section-features
+  & > * {
+    transform: skewY(+7deg);
+  }
 }
