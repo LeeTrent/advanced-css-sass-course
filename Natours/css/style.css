@@ -229,6 +229,32 @@ body {
   .feature-box:hover {
     transform: translateY(-0.9375rem) scale(1.03); }
 
+.card {
+  perspective: 93.75rem;
+  -moz-perspective: 93.75rem;
+  position: relative;
+  height: 31.25rem; }
+  .card__side {
+    background-color: orangered;
+    color: #FFF;
+    font-size: 1.25rem;
+    height: 31.25rem;
+    transition: all .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -298,3 +324,8 @@ body {
   margin-top: -6.25rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 10rem 0 20rem 0;
+  margin-top: -6.25rem; }
