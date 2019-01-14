@@ -6,14 +6,14 @@
     perspective: 93.75rem;
     -moz-perspective: 93.75rem;
     position: relative;
-    height: 31.25rem;
+    height: 31.875rem;
 
     &__side {
         // background-color: orangered;
-        color: #FFF;
-        font-size: 1.25rem;
+        // color: #FFF;
+        // font-size: 1.25rem;
 
-        height: 31.25rem;
+        height: 31.875rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
@@ -29,8 +29,6 @@
         }
 
         &--back {
-            // background-color: green;
-            // background-color: $color-white;
             transform: rotateY(180deg);
 
             &-1 {
@@ -60,6 +58,50 @@
         &--1 {
             background-image:   linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
                                 url(../img/nat-5.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 1.75rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 7.5rem;
+        right: 1.25rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 0.625rem 0.9375rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, 0.85),
+                rgba($color-secondary-dark, 0.85));
+        }
+    }
+
+    &__details {
+        padding: 1.875rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 0.9375rem;
+                padding: 0.625rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
         }
     }
 
