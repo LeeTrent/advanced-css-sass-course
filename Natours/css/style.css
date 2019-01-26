@@ -338,6 +338,25 @@ body {
     font-size: 3.75rem;
     font-weight: 100; }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 3.75rem;
+  font-size: 1rem; }
+  .story__shape {
+    width: 9.375rem;
+    height: 9.375rem;
+    float: left;
+    background-color: orangered;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-1.875rem); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -411,5 +430,10 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 10rem 0 10rem 0;
+  background-color: yellow;
+  padding: 10rem 0 4rem 0;
   margin-top: -6.25rem; }
+
+.section-stories {
+  padding: 3rem 0;
+  background-color: pink; }
