@@ -345,17 +345,22 @@ body {
   background-color: #fff;
   border-radius: 3px;
   padding: 3.75rem;
-  font-size: 1rem; }
+  padding-left: 5.625rem;
+  font-size: 1rem;
+  transform: skewX(-12deg); }
   .story__shape {
     width: 9.375rem;
     height: 9.375rem;
     float: left;
-    background-color: orangered;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translate(-1.875rem); }
+    transform: translate(-1.875rem) skewX(12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(12deg); }
 
 .header {
   position: relative;
@@ -430,10 +435,10 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  background-color: yellow;
   padding: 10rem 0 4rem 0;
   margin-top: -6.25rem; }
 
 .section-stories {
+  margin-top: -2.5rem;
   padding: 3rem 0;
-  background-color: pink; }
+  background-color: #f7f7f7; }

@@ -19,12 +19,14 @@
 
 .section-tours {
     background-color: $color-grey-light-1;
-    background-color: yellow;
+    // background-color: yellow;
     padding: 10rem 0 4rem 0;   
     margin-top: -6.25rem; 
 }
 
 .section-stories {
+    margin-top: -2.5rem; 
     padding: 3rem 0;
-    background-color: pink;
+    // background-color: pink;
+    background-color: $color-grey-light-1;
 }
