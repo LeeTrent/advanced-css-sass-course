@@ -391,7 +391,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .25;
+  opacity: .33;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -479,3 +479,14 @@ body {
   margin-top: -2.5rem;
   padding: 3rem 0;
   padding-top: 4.5rem; }
+
+.section-book {
+  padding: 0.9375rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.25);
+  height: 31.25rem; }
