@@ -10,6 +10,23 @@
 html { 
    /* font-size: 16px; */
    font-size: 100%;
+
+   @include respond(phone) {
+    // font-size: 50%;
+    font-size: 80%;
+   }
+   @include respond(tab-port) {
+    // font-size: 60%;
+    font-size: 96%;
+   }
+   @include respond(tab-land) {
+    // font-size: 70%;
+    font-size: 112%;
+   }
+   @include respond(big-desktop) {
+    // font-size: 80%;
+    font-size: 128%;
+   }         
 }
 
 body {

@@ -1,3 +1,14 @@
+/*
+    ----------------------------------
+    PIXEL RANGE     TARGET DEVICE
+    ----------------------------------
+       0 - 600      Phone
+     600 - 900      Tablet (portrait)
+     900 - 1200     Tablet (landscape)
+    1200 - 1800     Normal CSS applied
+    1800 - Infinity Large Desktop
+    ----------------------------------
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -41,6 +52,18 @@
 html {
   /* font-size: 16px; */
   font-size: 100%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 80%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 96%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 112%; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 128%; } }
 
 body {
   box-sizing: border-box; }
