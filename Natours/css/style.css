@@ -54,16 +54,20 @@ html {
   font-size: 100%; }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 90%; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 80%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 120%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1.875rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -71,8 +75,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  /* padding: 30px; */
-  padding: 1.875rem; }
+  /* padding: 30px; */ }
 
 .heading-primary {
   color: #fff;
@@ -90,6 +93,10 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 0.625rem;
+        font-size: 3.125rem; } }
   .heading-primary--sub {
     display: block;
     /* font-size: 17.5px; */
@@ -99,6 +106,9 @@ body {
     letter-spacing: 1.0875rem;
     text-align: center;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.3125rem; } }
 
 .heading-secondary {
   font-style: 3.5rem;

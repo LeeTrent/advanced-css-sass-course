@@ -28,6 +28,17 @@
     ----------------------------------
 */
 
+//////////////////////
+// ORDER
+//////////////////////
+//  1. Base
+//  2. Typography
+//  3. General Layout
+//  4. Grid
+//  5. Page Layout
+//  6. Components
+//////////////////////
+
 ////////////////////////////////////////////////////////////////////////////////
 // POSSIBLE $breakpoint VALUES
 ////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +49,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) { @content }; // 600px (600 / 16)     
+        @media (max-width: 37.5em) { @content }; // 600px (600 / 16)
+        // @media (max-width: 25em) { @content }; // 600px (600 / 16)     
     }
     @if $breakpoint == tab-port {
         @media (max-width: 56.25em) { @content }; // 900px (900 / 16)         
