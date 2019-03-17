@@ -600,6 +600,10 @@ body {
   /* right arrow */
   /* -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */ }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     /* top: 40px;
@@ -627,7 +631,8 @@ body {
         margin-bottom: 3.75rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 31.25rem; } }
+      max-width: 31.25rem;
+      padding: 0 1.875rem; } }
   .row::after {
     content: "";
     display: table;
@@ -661,6 +666,9 @@ body {
   color: #f7f7f7;
   padding: 6.25rem 0;
   font-size: 0.875rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 5rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 5rem; }
@@ -671,6 +679,10 @@ body {
     border-top: 1px solid #777;
     padding-top: 1.25rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -693,6 +705,10 @@ body {
     padding-top: 1.25rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation__checkbox {
   display: none; }
@@ -709,6 +725,14 @@ body {
   box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 2.8125rem;
+      right: 2.8125rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 2.1875rem;
+      right: 2.1875rem; } }
 
 .navigation__background {
   height: 3.75rem;
@@ -720,6 +744,14 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 2.8125rem;
+      right: 2.8125rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 2.1875rem;
+      right: 2.1875rem; } }
 
 .navigation__nav {
   height: 100vh;
